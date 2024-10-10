@@ -135,8 +135,8 @@ matrix matrix_product(matrix A, matrix B)
 matrix matrix_traspuesta(matrix A)
 {
     matrix temp;
-    temp.columnas=A.columnas;
-    temp.filas=A.filas;
+    temp.columnas=A.filas;
+    temp.filas=A.columnas;
     int i,j;
     float **m;
     m=malloc(temp.filas*sizeof(float*));
